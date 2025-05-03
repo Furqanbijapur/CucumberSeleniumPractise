@@ -17,7 +17,7 @@ Given This is a contact test case
 Scenario: Create a deal
 Given This is a deal test case
 
-@RegressionTest
+@This is a search email test
 Scenario: Create a tasks
 Given This is a tasks test case
 

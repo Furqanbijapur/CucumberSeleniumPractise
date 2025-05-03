@@ -1,231 +1,137 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("/Users/NaveenKhunteta/Documents/workspace/FreeCrmBDDFramework/src/main/java/Features/taggedhooks.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("./Features/deals.feature");
 formatter.feature({
   "line": 1,
-  "name": "Test Tagged Hooks",
+  "name": "Deal data creation",
   "description": "",
-  "id": "test-tagged-hooks",
+  "id": "deal-data-creation",
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 259317,
+  "duration": 2121500,
   "status": "passed"
 });
 formatter.before({
-  "duration": 133065,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 135775,
+  "duration": 3651901,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 4,
-  "name": "This is First test",
+  "line": 3,
+  "name": "Free CRM Create a new deal scenario",
   "description": "",
-  "id": "test-tagged-hooks;this-is-first-test",
+  "id": "deal-data-creation;free-crm-create-a-new-deal-scenario",
   "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@First"
-    }
-  ]
+  "keyword": "Scenario"
 });
 formatter.step({
   "line": 5,
-  "name": "this is the first step",
+  "name": "user is already on Login Page",
   "keyword": "Given "
 });
 formatter.step({
   "line": 6,
-  "name": "this is the second step",
+  "name": "title of login page is Free CRM",
   "keyword": "When "
 });
 formatter.step({
   "line": 7,
-  "name": "this is the third step",
+  "name": "user enters username and password",
+  "rows": [
+    {
+      "cells": [
+        "naveenk",
+        "test@123"
+      ],
+      "line": 8
+    }
+  ],
   "keyword": "Then "
 });
-formatter.match({
-  "location": "TaggedHooksStepDefinition.this_is_the_first_step()"
-});
-formatter.result({
-  "duration": 85898436,
-  "status": "passed"
-});
-formatter.match({
-  "location": "TaggedHooksStepDefinition.this_is_the_second_step()"
-});
-formatter.result({
-  "duration": 98039,
-  "status": "passed"
-});
-formatter.match({
-  "location": "TaggedHooksStepDefinition.this_is_the_third_step()"
-});
-formatter.result({
-  "duration": 84479,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 54473,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 44919,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 81175,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 112120,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 82098,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 76810,
-  "status": "passed"
-});
-formatter.scenario({
+formatter.step({
   "line": 10,
-  "name": "This is Second test",
-  "description": "",
-  "id": "test-tagged-hooks;this-is-second-test",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 9,
-      "name": "@Second"
-    }
-  ]
+  "name": "user clicks on login button",
+  "keyword": "Then "
 });
 formatter.step({
   "line": 11,
-  "name": "this is the first step",
-  "keyword": "Given "
+  "name": "user is on home page",
+  "keyword": "Then "
 });
 formatter.step({
   "line": 12,
-  "name": "this is the second step",
-  "keyword": "When "
+  "name": "user moves to new deal page",
+  "keyword": "Then "
 });
 formatter.step({
   "line": 13,
-  "name": "this is the third step",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "TaggedHooksStepDefinition.this_is_the_first_step()"
-});
-formatter.result({
-  "duration": 127029,
-  "status": "passed"
-});
-formatter.match({
-  "location": "TaggedHooksStepDefinition.this_is_the_second_step()"
-});
-formatter.result({
-  "duration": 88211,
-  "status": "passed"
-});
-formatter.match({
-  "location": "TaggedHooksStepDefinition.this_is_the_third_step()"
-});
-formatter.result({
-  "duration": 88937,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 92284,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 140453,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 66290,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 120620,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 76143,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 67536,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 16,
-  "name": "This is Third test",
-  "description": "",
-  "id": "test-tagged-hooks;this-is-third-test",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
+  "name": "user enters deal details",
+  "rows": [
     {
-      "line": 15,
-      "name": "@Third"
+      "cells": [
+        "test deal",
+        "1000",
+        "50",
+        "10"
+      ],
+      "line": 14
     }
-  ]
+  ],
+  "keyword": "Then "
 });
 formatter.step({
-  "line": 17,
-  "name": "this is the first step",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 18,
-  "name": "this is the second step",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 19,
-  "name": "this is the third step",
+  "line": 16,
+  "name": "Close the browser",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "TaggedHooksStepDefinition.this_is_the_first_step()"
+  "location": "LoginStepDefinition.user_already_on_login_page()"
 });
 formatter.result({
-  "duration": 69572,
-  "status": "passed"
+  "duration": 361924300,
+  "error_message": "java.lang.ExceptionInInitializerError\r\n\tat cucumber.deps.com.thoughtworks.xstream.XStream.setupConverters(XStream.java:820)\r\n\tat cucumber.deps.com.thoughtworks.xstream.XStream.\u003cinit\u003e(XStream.java:574)\r\n\tat cucumber.deps.com.thoughtworks.xstream.XStream.\u003cinit\u003e(XStream.java:530)\r\n\tat cucumber.runtime.xstream.LocalizedXStreams$LocalizedXStream.\u003cinit\u003e(LocalizedXStreams.java:50)\r\n\tat cucumber.runtime.xstream.LocalizedXStreams.newXStream(LocalizedXStreams.java:37)\r\n\tat cucumber.runtime.xstream.LocalizedXStreams.get(LocalizedXStreams.java:29)\r\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\r\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:300)\r\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\r\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)\r\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:100)\r\n\tat org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)\r\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:520)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:748)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:443)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:211)\r\n\tat ✽.Given user is already on Login Page(./Features/deals.feature:5)\r\nCaused by: java.lang.reflect.InaccessibleObjectException: Unable to make field private final java.util.Comparator java.util.TreeMap.comparator accessible: module java.base does not \"opens java.util\" to unnamed module @6be46e8f\r\n\tat java.base/java.lang.reflect.AccessibleObject.throwInaccessibleObjectException(AccessibleObject.java:391)\r\n\tat java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:367)\r\n\tat java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:315)\r\n\tat java.base/java.lang.reflect.Field.checkCanSetAccessible(Field.java:183)\r\n\tat java.base/java.lang.reflect.Field.setAccessible(Field.java:177)\r\n\tat cucumber.deps.com.thoughtworks.xstream.core.util.Fields.locate(Fields.java:39)\r\n\tat cucumber.deps.com.thoughtworks.xstream.converters.collections.TreeMapConverter.\u003cclinit\u003e(TreeMapConverter.java:50)\r\n\tat cucumber.deps.com.thoughtworks.xstream.XStream.setupConverters(XStream.java:820)\r\n\tat cucumber.deps.com.thoughtworks.xstream.XStream.\u003cinit\u003e(XStream.java:574)\r\n\tat cucumber.deps.com.thoughtworks.xstream.XStream.\u003cinit\u003e(XStream.java:530)\r\n\tat cucumber.runtime.xstream.LocalizedXStreams$LocalizedXStream.\u003cinit\u003e(LocalizedXStreams.java:50)\r\n\tat cucumber.runtime.xstream.LocalizedXStreams.newXStream(LocalizedXStreams.java:37)\r\n\tat cucumber.runtime.xstream.LocalizedXStreams.get(LocalizedXStreams.java:29)\r\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\r\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:300)\r\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\r\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)\r\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:100)\r\n\tat org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)\r\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:520)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:748)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:443)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:211)\r\n",
+  "status": "failed"
 });
 formatter.match({
-  "location": "TaggedHooksStepDefinition.this_is_the_second_step()"
+  "location": "LoginStepDefinition.title_of_login_page_is_free_CRM()"
 });
 formatter.result({
-  "duration": 72834,
-  "status": "passed"
+  "status": "skipped"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
 });
 formatter.match({
-  "location": "TaggedHooksStepDefinition.this_is_the_third_step()"
+  "location": "LoginStepDefinition.user_clicks_on_login_button()"
 });
 formatter.result({
-  "duration": 71562,
+  "status": "skipped"
+});
+formatter.match({
+  "location": "LoginStepDefinition.user_is_on_hopme_page()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({
+  "location": "LoginStepDefinition.close_the_browser()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.after({
+  "duration": 1674200,
   "status": "passed"
 });
 formatter.after({
-  "duration": 74866,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 67355,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 66706,
+  "duration": 604300,
   "status": "passed"
 });
 });

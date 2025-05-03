@@ -12,5 +12,6 @@ Then user is on home page
 Then user moves to new deal page
 Then user enters deal details
 | test deal | 1000 | 50 | 10 |
+| Final deal | 5000 | 70 | 10 |
 
 Then Close the browser
